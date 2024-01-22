@@ -44,14 +44,30 @@ window.onclick = function (event) {
 }
 
 // 무한 스크롤
+// modal_wrap.addEventListener("scroll", function () {
+//   if (modal_wrap.offsetHeight + modal_wrap.scrollTop >= modal_wrap.scrollHeight) {
+//     const img = document.createElement("img");
+//     img.src = `https://picsum.photos/600`;
+//     img.style.marginBottom = "90px";
+//     img.style.borderRadius = "30px";
+//     img.style.filter = "drop-shadow(10px 10px 30px #c3c3c3)";
+//     modal_wrap.appendChild(img);
+//   }
+// });
+
+// 아래와 같이 fetch api 사용 추가
 modal_wrap.addEventListener("scroll", function () {
   if (modal_wrap.offsetHeight + modal_wrap.scrollTop >= modal_wrap.scrollHeight) {
     const img = document.createElement("img");
-    img.src = `https://picsum.photos/600`;
-    img.style.marginBottom = "90px";
-    img.style.borderRadius = "30px";
-    img.style.filter = "drop-shadow(10px 10px 30px #c3c3c3)";
-    modal_wrap.appendChild(img);
+    fetch("https://picsum.photos/600/600/?random")
+      .then((response) => response.blob())
+      .then((blob) => {
+        img.src = URL.createObjectURL(blob);
+        img.style.marginBottom = "90px";
+        img.style.borderRadius = "30px";
+        img.style.filter = "drop-shadow(10px 10px 30px #c3c3c3)";
+        modal_wrap.appendChild(img);
+      });
   }
 });
 
