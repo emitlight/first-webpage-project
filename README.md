@@ -11,6 +11,6 @@
 4️⃣ 스크롤 버튼<br>
 
 ## Preview
-![first-webpage-project-01](https://github.com/emitlight/first-webpage-project/assets/128894133/e1fe7a53-1c8c-4e4a-a259-7b9bb0ae041c)
+![first-webpage-project-01](https://github.com/emitlight/first-webpage-project/assets/128894133/ccdb4383-f814-48a3-a2f1-92960bca5926)
 ## 모달 창 - "Subscribe"
-![first-webpage-project-02](https://github.com/emitlight/first-webpage-project/assets/128894133/041c8e8b-4665-42f0-8cbc-6601ba7df4ca)
+![first-webpage-project-02](https://github.com/emitlight/first-webpage-project/assets/128894133/1cb4c124-a3cc-4cd0-b088-ec9d8b316969)
