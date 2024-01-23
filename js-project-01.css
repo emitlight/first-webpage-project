@@ -346,6 +346,7 @@ button{
 
 .modal_main img{
   margin-bottom: 90px;
+  z-index: 1;
 }
 
 /*모달-구독 창*/
