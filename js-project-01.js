@@ -6,6 +6,7 @@ const subscribe = document.querySelector(".sub_btn");
 const sub_img = document.querySelector("#modal_img");
 const sub_close = document.querySelector(".sub_close");
 const scr_btn = document.querySelector(".scroll-up");
+const about = document.querySelector(".list :nth-child(2)");
 
 // 모달 창 열기
 function openModal() {
@@ -55,7 +56,7 @@ window.onclick = function (event) {
 //   }
 // });
 
-// 아래와 같이 fetch api 사용 추가
+
 modal_wrap.addEventListener("scroll", function () {
   if (modal_wrap.offsetHeight + modal_wrap.scrollTop >= modal_wrap.scrollHeight) {
     const img = document.createElement("img");
@@ -71,3 +72,7 @@ modal_wrap.addEventListener("scroll", function () {
   }
 });
 
+// 링크 알림 창
+about.addEventListener("click", ()=> {
+  alert("토리에 대해 알고 싶으신가요?\n토리는 22년 6월 말에 태어났어요.\n건강한 수컷, 혼혈 코숏이랍니다.");
+})
