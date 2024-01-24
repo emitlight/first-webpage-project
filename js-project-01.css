@@ -233,6 +233,11 @@ footer{
   align-items: center;
 }
 
+.sub_right img{
+  position: absolute;
+  left: 725px;
+}
+
 .sub_right input{
   border: none;
   border-radius: 40px;
@@ -246,22 +251,17 @@ footer{
   left: 1065px;
 }
 
-.scroll-up{
-  position: absolute;
-  top: 450px;
-  z-index: 1000;
-}
-
 .scroll-up img{
   background-color: white;
-  border: #888888 solid 1px;
+  border: #c4c4c4 solid 1px;
   opacity: 60%;
   border-radius: 100px;
   width: 50px;
   cursor: pointer;
   position: fixed;
-  top: 598px;
-  left: 1430px;
+  top: 65%;
+  left: 94%;
+  text-align: center;
 }
 
 .last_img img{
@@ -377,3 +377,12 @@ button{
   left: 190px;
 }
 
+/*이미지 hover 효과*/
+.header_right img{
+  transition: .5s ease-in-out;
+}
+
+.header_right img:hover{
+  margin-top: -30px;
+  transition: .5s ease-in-out;
+}
